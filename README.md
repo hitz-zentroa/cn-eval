@@ -4,7 +4,6 @@
 
 <p align="center">
     <a href="https://github.com/hitz-zentroa/cn-eval/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hitz-zentroa/cn-eval"></a>
-    <a href="https://hitz-zentroa.github.io/cn-eval/"><img alt="Blog" src="https://img.shields.io/badge/📒-Blog Post-blue"></a>
     <a href="https://arxiv.org/abs/2406.15227"><img alt="Paper" src="https://img.shields.io/badge/📖-Paper-orange"></a>
 <br>
      <a href="http://www.hitz.eus/"><img src="https://img.shields.io/badge/HiTZ-Basque%20Center%20for%20Language%20Technology-blueviolet"></a>
@@ -27,7 +26,7 @@ Below, you can find a visualization of the correlation matrix, which demonstrate
 </p>
 
 <p align="center">
-<img src="img/total_spearman.png">
+<img src="img/total_spearman.png"><width="50%">
 </p>
 
 
