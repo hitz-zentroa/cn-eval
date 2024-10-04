@@ -3,7 +3,6 @@
 
 
 <p align="center">
-    <a href="https://twitter.com/intent/tweet?text=Wow+this+new+model+is+amazing:&url=https%3A%2F%2Fgithub.com%2Fhitz-zentroa%2FGoLLIE"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fhitz-zentroa%2FGoLLIE"></a>
     <a href="https://github.com/hitz-zentroa/cn-eval/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hitz-zentroa/cn-eval"></a>
     <a href="https://hitz-zentroa.github.io/cn-eval/"><img alt="Blog" src="https://img.shields.io/badge/📒-Blog Post-blue"></a>
     <a href="https://arxiv.org/abs/2406.15227"><img alt="Paper" src="https://img.shields.io/badge/📖-Paper-orange"></a>
