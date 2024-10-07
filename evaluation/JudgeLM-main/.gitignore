@@ -1,0 +1,40 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+.venv
+/jjlm-test-torchrun-baai.py
+
+# Log
+*.log
+*.log.*
+*.json
+
+# Editor
+.idea
+*.swp
+
+# data
+/judgelm/data/JudgeLM/answers
+/judgelm/data/JudgeLM/*.jsonl
+/judgelm/data/MM-Vet/*.json
+/judgelm/data/MM-Vet/*.jsonl
+
+# Other
+.DS_Store
+wandb
+output
+/checkpoints_output
+/judgements_output
+/opensource_utils
+/scripts/git_test
+
+# Data
+*.pkl
+*.csv
+/data/PandaData/
+
+# Build
+build
+
