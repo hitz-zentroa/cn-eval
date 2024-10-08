@@ -1,0 +1,37 @@
+#! /bin/sh
+
+prefixdir=$1
+PACKAGE_NAME=irstlm
+PACKAGE_VERSION=`cat ${prefixdir}/RELEASE`
+
+bininstallname=${PACKAGE_NAME}-${PACKAGE_VERSION}-bin
+libinstallname=${PACKAGE_NAME}-${PACKAGE_VERSION}-lib
+srcinstallname=${PACKAGE_NAME}-${PACKAGE_VERSION}
+
+cwd=`pwd`
+echo $cwd
+echo $bininstallname
+echo $libinstallname
+
+tmpdir=${PACKAGE_NAME}-${PACKAGE_VERSION}
+
+if [ -d $tmpdir ] ; then
+echo "directory $tmpdir already exists. Please check!"
+exit 1;
+fi
+
+svn export https://irstlm.svn.sourceforge.net/svnroot/irstlm/trunk $tmpdir
+
+tar czf ${cwd}/${srcinstallname}.tgz $tmpdir
+zip -r ${cwd}/${srcinstallname}.zip $tmpdir
+
+cp -r ${prefixdir}/bin ${prefixdir}/lib ${prefixdir}/include $tmpdir/
+
+tar czf ${cwd}/${bininstallname}.tgz $tmpdir/bin
+zip -r -y ${cwd}/${bininstallname}.zip $tmpdir/bin
+
+tar czf ${cwd}/${libinstallname}.tgz $tmpdir/lib $tmpdir/include
+zip -r -y ${cwd}/${libinstallname}.zip $tmpdir/lib $tmpdir/include
+
+\rm -r $tmpdir
+
