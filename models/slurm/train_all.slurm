@@ -14,12 +14,16 @@ source ./venv/bin/activate
 export HF_HOME=./cache/
 export CORPUS=CONAN # other option MT-CONAN
 
-base_models=() # list of huggingface checkpoint names
+base_models=(HuggingFaceH4/zephyr-7b-beta
+mistralai/Mistral-7B-v0.1
+mistralai/Mistral-7B-Instruct-v0.2
+meta-llama/Llama-2-7b-chat-hf)  # list of huggingface checkpoint names
+
 learning_rates=() # list of learning rates for each model
 
-architectures=(mistral
+architectures=(zephyr
+mistral
 mistral-instruct
-zephyr
 llama-chat)
 
 for (( num=0; num<${#base_models[@]}; num++ ));

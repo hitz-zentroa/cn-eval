@@ -14,11 +14,14 @@ source ./venv/bin/activate
 export HF_HOME=./cache/
 export CORPUS=CONAN # other option MT-CONAN
 
-base_models=() # list of huggingface checkpoint names
-filenames=() # list of output file names
+base_models=(HuggingFaceH4/zephyr-7b-beta
+mistralai/Mistral-7B-v0.1
+mistralai/Mistral-7B-Instruct-v0.2
+meta-llama/Llama-2-7b-chat-hf) # List of huggingface checkpoint names
 
-architectures=(mistral
-zephyr
+filenames=() # list of output file names. One per model
+
+architectures=(zephyr
 mistral
 mistral-instruct
 llama-chat) # In generation this parameter only affects prompting format
